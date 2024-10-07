@@ -1,10 +1,10 @@
 import { body, modals } from './elements.js';
 
 export function setModals() {
-	
+
 	// Перебираємо всі кнопки і вішаємо подію кліку на кнопки
 	modals.forEach(btnCallModal => {
-		
+
 		// Вішаємо клік на кнопки
 		btnCallModal.addEventListener('click', (e) => {
 			e.preventDefault();
@@ -17,7 +17,7 @@ export function setModals() {
 
 				// Отримуємо блок
 				const modal = document.querySelector(modalSelector);
-	
+
 				// Показуємо або приховуємо блок
 				if (modal.classList.contains('show')) {
 					body.classList.remove('modal-open');
@@ -34,7 +34,7 @@ export function setModals() {
 
 // Закриваємо модальне вікно
 export function setModalClose(modalSelector = '') {
-	
+
 	// Якщо є селектор починаємо код
 	if (modalSelector) {
 
@@ -45,5 +45,21 @@ export function setModalClose(modalSelector = '') {
 			body.classList.remove('modal-open');
 			modal.classList.remove('show');
 		}
+	}
+}
+
+
+// Відкриваємо модальне вікно
+export function setModalOpen(modalSelector = '') {
+
+	// Якщо є селектор починаємо код
+	if (modalSelector) {
+
+		// Отримуємо блок
+		const modal = document.querySelector(modalSelector);
+
+		// Добавляємо класс для відображення блоку
+		body.classList.add('modal-open');
+		modal.classList.add('show');
 	}
 }

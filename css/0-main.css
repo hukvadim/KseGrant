@@ -67,6 +67,10 @@ svg {
     max-width: 900px;
 }
 
+.text-left {
+    text-align: left !important;
+}
+
 .w-100 {
     width: 100%;
 }
@@ -122,7 +126,7 @@ svg {
 .title-square {
     --h: 176px;
     --icon-color: #ff0000;
-    
+
     position: relative;
     padding-top: calc(var(--h) / 2.5);
     min-height: var(--h);
@@ -134,11 +138,13 @@ svg {
     line-height: 1.6;
     margin-bottom: 60px;
 }
+
 .title-square.title-square--icon {
     --icon-padding: 10px;
-    
+
     padding-top: calc(var(--h) / 3.6);
 }
+
 .title-square.title-square--icon::after {
     display: none;
 }
@@ -189,5 +195,3 @@ svg {
     font-size: 46px;
     font-weight: 700;
 }
-
-

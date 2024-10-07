@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KSE Grant Application</title>
+
+    <link rel="icon" type="image/png" href="/./img/favicon/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="/./img/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/./img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/./img/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+    <link rel="manifest" href="/./img/favicon/site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./libs/toastify/toastify.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="nav-padding" data-page="candidates">
+
+    <nav class="nav">
+        <div class="container flex flex-between flex-items-center">
+            <a href="https://mavvkkaa.github.io/KseGrantAutomatization/" class="logo">KSE Grant Vacancies</a>
+            <ul class="nav-ul flex flex-items-center gap-40">
+                <li class="nav-li"><a href="index.html#vacancy" class="nav-link">Вакансії</a></li>
+            </ul>
+            <ul class="nav-btn-actions flex flex-items-center gap-10">
+                <li class="nav-btn-li"><a href="index.html" class="nav-btn-link btn btn-ghost btn-round"
+                        data-toggle-modal="index.html#modal-add-vacancy">Створити вакансію</a></li>
+                <li class="nav-btn-li"><a href="index.html#programs" class="nav-btn-link btn  btn-round">Перелік
+                        програм</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="program" id="vacancy">
+        <div class="container">
+            <h2 class="program-box-title title-square title-square--icon">
+                <span class="title-square__icon">
+                    <svg class="icon icon-fire" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M14.59,9.9c.37-3-.23-6.18-2.95-7.9A8.36,8.36,0,0,1,8.9,7c-1.59,1.6-3.23,3-4.2,5.53-1.28,3.67.26,7.42,4,9.51a4.86,4.86,0,0,1,1.86-3.51,4.17,4.17,0,0,0,1.55-2.69,7.41,7.41,0,0,1,4,6.15c6.4-3.4,4.68-10.49,1.63-14.11">
+                        </path>
+                    </svg>
+                </span>
+                <span class="title-square__main">Список кандидатів</span>
+            </h2>
+        </div>
+
+        <div class="card-list flex flex-wrap gap-20 flex-center flex-column" id="vacancy-list">
+            <h2 class="empty-state">Кандидати завантажуються...</h2>
+            <!--             
+            <a href="#" class="card-item card-item-vacancy flex">
+                <span class="card-item-title-holder flex flex-column gap-10">
+                    <span class="card-item-title-info">Бізнес-економіка</span>
+                    <span class="card-item-title">Помічник аналітика</span>
+                    <span class="card-item-details flex flex-wrap gap-10">
+                        <span class="card-item-detail-item">Тривалість: Весь рік</span>
+                        <span class="card-item-detail-item">Рік навчання: Будь-який</span>
+                    </span>
+                </span>
+            </a>
+             -->
+        </div>
+    </section>
+
+
+
+    <script defer src="./libs/toastify/toastify.js"></script>
+    <script defer src="./js/script.js" type="module"></script>
+</body>
+
+</html>

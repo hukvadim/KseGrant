@@ -15,25 +15,26 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="./libs/toastify/toastify.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body class="nav-padding">
+<body class="nav-padding" data-page="home">
 
     <nav class="nav">
         <div class="container flex flex-between flex-items-center">
-            <a href="/" class="logo">KSE Grant Vacancies</a>
+            <a href="https://mavvkkaa.github.io/KseGrantAutomatization/" class="logo">KSE Grant Vacancies</a>
             <ul class="nav-ul flex flex-items-center gap-40">
-                <li class="nav-li"><a href="#" class="nav-link">Вакансії</a></li>
-                <li class="nav-li"><a href="#" class="nav-link">Перелік програм</a></li>
-                <li class="nav-li"><a href="#" class="nav-link">Контакти</a></li>
+                <li class="nav-li"><a href="#vacancy" class="nav-link">Вакансії</a></li>
+
             </ul>
             <ul class="nav-btn-actions flex flex-items-center gap-10">
-                <li class="nav-btn-li"><a href="form-mentor.html" class="nav-btn-link btn btn-ghost btn-round" data-toggle-modal="#modal-add-vacancy">Створити вакансію</a></li>
-                <li class="nav-btn-li"><a href="#" class="nav-btn-link btn  btn-round">Перелік програм</a></li>
+                <li class="nav-btn-li"><a href="#" class="nav-btn-link btn btn-ghost btn-round"
+                        data-toggle-modal="#modal-add-vacancy">Створити вакансію</a></li>
+                <li class="nav-btn-li"><a href="#programs" class="nav-btn-link btn  btn-round">Перелік програм</a></li>
             </ul>
         </div>
     </nav>
@@ -42,9 +43,10 @@
         <div class="container">
             <div class="call-to-action-holder flex flex-between flex-items-center gap-40">
                 <div class="call-to-action-text-hold">
-                    <h1 class="call-to-action-title">Вибери програму навчання, заповни форму і отримайте вакансію!</h1>
-                    <p class="call-to-action-text">У нашому універститі найбільший вибір грантів та багато інших переваг для вас.</p>
-                    <a href="" class="call-to-action-action btn btn-xl">Перелік програм</a>
+                    <h1 class="call-to-action-title">Вибери програму навчання, заповни форму і стань частиною нашої
+                        команди!</h1>
+
+                    <a href="#programs" class="call-to-action-action btn btn-xl">Перелік програм</a>
                 </div>
                 <div class="call-to-action-img-hold">
                     <img src="./img/call-to-action-img.jpg" alt="" class="call-to-action-img w-100">
@@ -53,7 +55,7 @@
         </div>
     </section>
 
-    <section class="program">
+    <section class="program" id="programs">
         <div class="container">
             <h2 class="program-box-title title-square">
                 <span class="title-square__small">Ми підготували для вас</span>
@@ -123,129 +125,178 @@
             </div> -->
 
             <div class="card-list flex flex-wrap gap-20 flex-center">
-                <a href="#" class="card-item flex">
-                    <span class="card-item-title-holder flex flex-column gap-10">
-                        <span class="card-item-title-info">Вибрати програму</span>
-                        <span class="card-item-title">Бізнес-економіка</span>
-                    </span>
-                    <span class="card-item-img-holder"><img src="./img/category/2.jpg" alt="category" class="card-item-img"></span>
-                </a>
-                <a href="#" class="card-item flex">
-                    <span class="card-item-title-holder flex flex-column gap-10">
-                        <span class="card-item-title-info">Вибрати програму</span>
-                        <span class="card-item-title">Економіка та великі дані</span>
-                    </span>
-                    <span class="card-item-img-holder"><img src="./img/category/3.jpg" alt="category" class="card-item-img"></span>
-                </a>
-                <a href="#" class="card-item flex">
-                    <span class="card-item-title-holder flex flex-column gap-10">
-                        <span class="card-item-title-info">Вибрати програму</span>
-                        <span class="card-item-title">Програмна інженерія та бізнес-аналітика</span>
-                    </span>
-                    <span class="card-item-img-holder"><img src="./img/category/1.jpg" alt="category" class="card-item-img"></span>
-                </a>
-                <a href="#" class="card-item flex">
-                    <span class="card-item-title-holder flex flex-column gap-10">
-                        <span class="card-item-title-info">Вибрати програму</span>
-                        <span class="card-item-title">Штучний інтелект</span>
-                    </span>
-                    <span class="card-item-img-holder"><img src="./img/category/1.jpg" alt="category" class="card-item-img"></span>
-                </a>
-                <a href="#" class="card-item flex">
-                    <span class="card-item-title-holder flex flex-column gap-10">
-                        <span class="card-item-title-info">Вибрати програму</span>
-                        <span class="card-item-title">Кібербезпека </span>
-                    </span>
-                    <span class="card-item-img-holder"><img src="./img/category/1.jpg" alt="category" class="card-item-img"></span>
-                </a>
-                <a href="#" class="card-item flex">
-                    <span class="card-item-title-holder flex flex-column gap-10">
-                        <span class="card-item-title-info">Вибрати програму</span>
-                        <span class="card-item-title">Прикладна математика</span>
-                    </span>
-                    <span class="card-item-img-holder"><img src="./img/category/1.jpg" alt="category" class="card-item-img"></span>
-                </a>
-                <a href="#" class="card-item flex">
-                    <span class="card-item-title-holder flex flex-column gap-10">
-                        <span class="card-item-title-info">Вибрати програму</span>
-                        <span class="card-item-title">Право</span>
-                    </span>
-                    <span class="card-item-img-holder"><img src="./img/category/1.jpg" alt="category" class="card-item-img"></span>
-                </a>
-                <a href="#" class="card-item flex">
-                    <span class="card-item-title-holder flex flex-column gap-10">
-                        <span class="card-item-title-info">Вибрати програму</span>
-                        <span class="card-item-title">Психологія</span>
-                    </span>
-                    <span class="card-item-img-holder"><img src="./img/category/1.jpg" alt="category" class="card-item-img"></span>
-                </a>
-                <a href="#" class="card-item flex">
-                    <span class="card-item-title-holder flex flex-column gap-10">
-                        <span class="card-item-title-info">Вибрати програму</span>
-                        <span class="card-item-title">Публічна політика та врядування</span>
-                    </span>
-                    <span class="card-item-img-holder"><img src="./img/category/1.jpg" alt="category" class="card-item-img"></span>
-                </a>
-                <a href="#" class="card-item flex">
-                    <span class="card-item-title-holder flex flex-column gap-10">
-                        <span class="card-item-title-info">Вибрати програму</span>
-                        <span class="card-item-title">Дослідження пам'яті та публічна історія</span>
-                    </span>
-                    <span class="card-item-img-holder"><img src="./img/category/1.jpg" alt="category" class="card-item-img"></span>
-                </a>
-                <a href="#" class="card-item flex">
-                    <span class="card-item-title-holder flex flex-column gap-10">
-                        <span class="card-item-title-info">Вибрати програму</span>
-                        <span class="card-item-title">Соціальна психологія</span>
-                    </span>
-                    <span class="card-item-img-holder"><img src="./img/category/1.jpg" alt="category" class="card-item-img"></span>
-                </a>
-                <a href="#" class="card-item flex">
-                    <span class="card-item-title-holder flex flex-column gap-10">
-                        <span class="card-item-title-info">Вибрати програму</span>
-                        <span class="card-item-title">Урбаністика та повоєнна відбудова</span>
-                    </span>
-                    <span class="card-item-img-holder"><img src="./img/category/1.jpg" alt="category" class="card-item-img"></span>
-                </a>
-                <a href="#" class="card-item flex">
-                    <span class="card-item-title-holder flex flex-column gap-10">
-                        <span class="card-item-title-info">Вибрати програму</span>
-                        <span class="card-item-title">Економіка бізнесу та фінансів</span>
-                    </span>
-                    <span class="card-item-img-holder"><img src="./img/category/1.jpg" alt="category" class="card-item-img"></span>
-                </a>
-                <a href="#" class="card-item flex">
-                    <span class="card-item-title-holder flex flex-column gap-10">
-                        <span class="card-item-title-info">Вибрати програму</span>
-                        <span class="card-item-title">Економічний аналіз</span>
-                    </span>
-                    <span class="card-item-img-holder"><img src="./img/category/1.jpg" alt="category" class="card-item-img"></span>
-                </a>
-                <a href="#" class="card-item flex">
+                <a href="#" class="card-item flex" data-filter-vacancy="any">
                     <span class="card-item-title-holder flex flex-column gap-10">
                         <span class="card-item-title-info">Вибрати програму</span>
                         <span class="card-item-title">Будь-яка програма</span>
                     </span>
-                    <span class="card-item-img-holder"><img src="./img/category/1.jpg" alt="category" class="card-item-img"></span>
+                    <span class="card-item-img-holder"><img src="./img/category/15.jpg" alt="category"
+                            class="card-item-img"></span>
                 </a>
+                <a href="#" class="card-item flex" data-filter-vacancy="business">
+                    <span class="card-item-title-holder flex flex-column gap-10">
+                        <span class="card-item-title-info">Вибрати програму</span>
+                        <span class="card-item-title">Бізнес-економіка</span>
+                    </span>
+                    <span class="card-item-img-holder"><img src="./img/category/1.jpg" alt="category"
+                            class="card-item-img"></span>
+                </a>
+                <a href="#" class="card-item flex" data-filter-vacancy="data_science">
+                    <span class="card-item-title-holder flex flex-column gap-10">
+                        <span class="card-item-title-info">Вибрати програму</span>
+                        <span class="card-item-title">Економіка та великі дані</span>
+                    </span>
+                    <span class="card-item-img-holder"><img src="./img/category/2.jpg" alt="category"
+                            class="card-item-img"></span>
+                </a>
+                <a href="#" class="card-item flex" data-filter-vacancy="software_engineering">
+                    <span class="card-item-title-holder flex flex-column gap-10">
+                        <span class="card-item-title-info">Вибрати програму</span>
+                        <span class="card-item-title">Програмна інженерія та бізнес-аналітика</span>
+                    </span>
+                    <span class="card-item-img-holder"><img src="./img/category/3.jpg" alt="category"
+                            class="card-item-img"></span>
+                </a>
+                <a href="#" class="card-item flex" data-filter-vacancy="ai">
+                    <span class="card-item-title-holder flex flex-column gap-10">
+                        <span class="card-item-title-info">Вибрати програму</span>
+                        <span class="card-item-title">Штучний інтелект</span>
+                    </span>
+                    <span class="card-item-img-holder"><img src="./img/category/4.jpg" alt="category"
+                            class="card-item-img"></span>
+                </a>
+                <a href="#" class="card-item flex" data-filter-vacancy="cybersecurity">
+                    <span class="card-item-title-holder flex flex-column gap-10">
+                        <span class="card-item-title-info">Вибрати програму</span>
+                        <span class="card-item-title">Кібербезпека</span>
+                    </span>
+                    <span class="card-item-img-holder"><img src="./img/category/5.jpg" alt="category"
+                            class="card-item-img"></span>
+                </a>
+                <a href="#" class="card-item flex" data-filter-vacancy="applied_math">
+                    <span class="card-item-title-holder flex flex-column gap-10">
+                        <span class="card-item-title-info">Вибрати програму</span>
+                        <span class="card-item-title">Прикладна математика</span>
+                    </span>
+                    <span class="card-item-img-holder"><img src="./img/category/6.jpg" alt="category"
+                            class="card-item-img"></span>
+                </a>
+                <a href="#" class="card-item flex" data-filter-vacancy="law">
+                    <span class="card-item-title-holder flex flex-column gap-10">
+                        <span class="card-item-title-info">Вибрати програму</span>
+                        <span class="card-item-title">Право</span>
+                    </span>
+                    <span class="card-item-img-holder"><img src="./img/category/7.jpg" alt="category"
+                            class="card-item-img"></span>
+                </a>
+                <a href="#" class="card-item flex" data-filter-vacancy="psychology">
+                    <span class="card-item-title-holder flex flex-column gap-10">
+                        <span class="card-item-title-info">Вибрати програму</span>
+                        <span class="card-item-title">Психологія</span>
+                    </span>
+                    <span class="card-item-img-holder"><img src="./img/category/8.jpg" alt="category"
+                            class="card-item-img"></span>
+                </a>
+                <a href="#" class="card-item flex" data-filter-vacancy="public_policy">
+                    <span class="card-item-title-holder flex flex-column gap-10">
+                        <span class="card-item-title-info">Вибрати програму</span>
+                        <span class="card-item-title">Публічна політика та врядування</span>
+                    </span>
+                    <span class="card-item-img-holder"><img src="./img/category/9.jpg" alt="category"
+                            class="card-item-img"></span>
+                </a>
+                <a href="#" class="card-item flex" data-filter-vacancy="history">
+                    <span class="card-item-title-holder flex flex-column gap-10">
+                        <span class="card-item-title-info">Вибрати програму</span>
+                        <span class="card-item-title">Дослідження пам'яті та публічна історія</span>
+                    </span>
+                    <span class="card-item-img-holder"><img src="./img/category/10.jpg" alt="category"
+                            class="card-item-img"></span>
+                </a>
+                <a href="#" class="card-item flex" data-filter-vacancy="social_psychology">
+                    <span class="card-item-title-holder flex flex-column gap-10">
+                        <span class="card-item-title-info">Вибрати програму</span>
+                        <span class="card-item-title">Соціальна психологія</span>
+                    </span>
+                    <span class="card-item-img-holder"><img src="./img/category/11.jpg" alt="category"
+                            class="card-item-img"></span>
+                </a>
+                <a href="#" class="card-item flex" data-filter-vacancy="urban_studies">
+                    <span class="card-item-title-holder flex flex-column gap-10">
+                        <span class="card-item-title-info">Вибрати програму</span>
+                        <span class="card-item-title">Урбаністика та повоєнна відбудова</span>
+                    </span>
+                    <span class="card-item-img-holder"><img src="./img/category/12.jpg" alt="category"
+                            class="card-item-img"></span>
+                </a>
+                <a href="#" class="card-item flex" data-filter-vacancy="business_economics">
+                    <span class="card-item-title-holder flex flex-column gap-10">
+                        <span class="card-item-title-info">Вибрати програму</span>
+                        <span class="card-item-title">Економіка бізнесу та фінансів</span>
+                    </span>
+                    <span class="card-item-img-holder"><img src="./img/category/13.jpg" alt="category"
+                            class="card-item-img"></span>
+                </a>
+                <a href="#" class="card-item flex" data-filter-vacancy="economic_analysis">
+                    <span class="card-item-title-holder flex flex-column gap-10">
+                        <span class="card-item-title-info">Вибрати програму</span>
+                        <span class="card-item-title">Економічний аналіз</span>
+                    </span>
+                    <span class="card-item-img-holder"><img src="./img/category/14.jpg" alt="category"
+                            class="card-item-img"></span>
+                </a>
+
             </div>
         </div>
     </section>
 
-    <section class="program">
+    <section class="program" id="vacancy">
         <div class="container">
             <h2 class="program-box-title title-square title-square--icon">
                 <span class="title-square__icon">
-                    <svg class="icon icon-fire" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.59,9.9c.37-3-.23-6.18-2.95-7.9A8.36,8.36,0,0,1,8.9,7c-1.59,1.6-3.23,3-4.2,5.53-1.28,3.67.26,7.42,4,9.51a4.86,4.86,0,0,1,1.86-3.51,4.17,4.17,0,0,0,1.55-2.69,7.41,7.41,0,0,1,4,6.15c6.4-3.4,4.68-10.49,1.63-14.11"></path></svg>
+                    <svg class="icon icon-fire" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M14.59,9.9c.37-3-.23-6.18-2.95-7.9A8.36,8.36,0,0,1,8.9,7c-1.59,1.6-3.23,3-4.2,5.53-1.28,3.67.26,7.42,4,9.51a4.86,4.86,0,0,1,1.86-3.51,4.17,4.17,0,0,0,1.55-2.69,7.41,7.41,0,0,1,4,6.15c6.4-3.4,4.68-10.49,1.63-14.11">
+                        </path>
+                    </svg>
                 </span>
                 <span class="title-square__small">Вчителі підготували вам</span>
                 <span class="title-square__main">ДОСТУПНІ ВАКАНСІЇ</span>
             </h2>
-        </div>
 
-        <div class="card-list flex flex-wrap gap-20 flex-center" id="vacancy-list">
-            <h2 class="empty-state">Вакансії завантажуються...</h2>
-            <!--             
+            <div class="program-category-list flex flex-wrap gap-10">
+                <a href="" class="program-category btn btn-ghost btn-sm" data-filter-vacancy="any">Будь-яка програма</a>
+                <a href="" class="program-category btn btn-ghost btn-sm"
+                    data-filter-vacancy="business">Бізнес-економіка</a>
+                <a href="" class="program-category btn btn-ghost btn-sm" data-filter-vacancy="data_science">Економіка та
+                    великі дані</a>
+                <a href="" class="program-category btn btn-ghost btn-sm"
+                    data-filter-vacancy="software_engineering">Програмна інженерія та бізнес-аналітика</a>
+                <a href="" class="program-category btn btn-ghost btn-sm" data-filter-vacancy="ai">Штучний інтелект</a>
+                <a href="" class="program-category btn btn-ghost btn-sm"
+                    data-filter-vacancy="cybersecurity">Кібербезпека</a>
+                <a href="" class="program-category btn btn-ghost btn-sm" data-filter-vacancy="applied_math">Прикладна
+                    математика</a>
+                <a href="" class="program-category btn btn-ghost btn-sm" data-filter-vacancy="law">Право</a>
+                <a href="" class="program-category btn btn-ghost btn-sm" data-filter-vacancy="psychology">Психологія</a>
+                <a href="" class="program-category btn btn-ghost btn-sm" data-filter-vacancy="public_policy">Публічна
+                    політика та врядування</a>
+                <a href="" class="program-category btn btn-ghost btn-sm" data-filter-vacancy="history">Дослідження
+                    пам'яті та публічна історія</a>
+                <a href="" class="program-category btn btn-ghost btn-sm"
+                    data-filter-vacancy="social_psychology">Соціальна психологія</a>
+                <a href="" class="program-category btn btn-ghost btn-sm" data-filter-vacancy="urban_studies">Урбаністика
+                    та повоєнна відбудова</a>
+                <a href="" class="program-category btn btn-ghost btn-sm"
+                    data-filter-vacancy="business_economics">Економіка бізнесу та фінансів</a>
+                <a href="" class="program-category btn btn-ghost btn-sm"
+                    data-filter-vacancy="economic_analysis">Економічний аналіз</a>
+            </div>
+
+            <div class="card-list flex flex-wrap gap-20 flex-center" id="vacancy-list">
+                <h2 class="empty-state">Вакансії завантажуються...</h2>
+                <!--             
             <a href="#" class="card-item card-item-vacancy flex">
                 <span class="card-item-title-holder flex flex-column gap-10">
                     <span class="card-item-title-info">Бізнес-економіка</span>
@@ -257,6 +308,8 @@
                 </span>
             </a>
              -->
+            </div>
+
         </div>
     </section>
 
@@ -271,48 +324,57 @@
                             © 2024 KSE Grant Vacancies. Київська школа економіки.
                         </li>
                     </ul>
-                    <ul class="list-nav list-nav-right">
-                        <li><a href="#">Вакансії</a></li>
-                        <li><a href="#">Перелік програм</a></li>
-                        <li><a href="#">Контакти</a></li>
-                    </ul>
                 </div>
-                <p class="footer__info">Вступ +38 050 151 15 70, applyto@kse.org.ua MBA +38 067 441 0111 mba@kse.org.ua. Інші питання: +38 050 396 30 04, pressoffice@kse.org.ua</p>
+                <p class="footer__info" style="text-align: left;">
+                    Вступ: +38 050 151 15 70, applyto@kse.org.ua<br>
+                    MBA: +38 067 441 0111, mba@kse.org.ua.<br>
+                    Інші питання: +38 050 396 30 04, pressoffice@kse.org.ua.
+                </p>
             </div>
-        </div>
     </footer>
 
 
     <section class="modal bg-gradient modal-form" id="modal-add-vacancy">
-		<div class="container container-modal">
-            <form class="modal__box form-style" >
+        <div class="container container-modal">
+            <form class="modal__box form-style">
                 <span class="modal__close btn btn-white btn-icon" data-toggle-modal="#modal-add-vacancy">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-x">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
                 </span>
                 <h2 class="modal__title">Додати вакансію:</h2>
-            
+
                 <div class="modal__content">
                     <!-- Назва для вакансії -->
                     <div class="form-group">
-                        <label class="form-label" for="title"><span class="required-label">Назва для вакансії</span></label>
-                        <input type="title" id="title" name="title" class="form-control" required placeholder="Заголовок">
+                        <label class="form-label" for="title"><span class="required-label">Назва для
+                                вакансії</span></label>
+                        <input type="title" id="title" name="title" class="form-control" required
+                            placeholder="Заголовок">
                     </div>
 
                     <!-- E-mail -->
                     <div class="form-group">
                         <label class="form-label" for="email"><span class="required-label">E-mail</span></label>
-                        <input type="email" id="email" name="email" class="form-control" required placeholder="example@email.net">
+                        <input type="email" id="email" name="email" class="form-control" required
+                            placeholder="example@email.net">
                     </div>
-            
+
                     <!-- Ім'я та прізвище ментора -->
                     <div class="form-group">
-                        <label class="form-label" for="firstlastname"><span class="required-label">Ім'я та прізвище ментора</span></label>
-                        <input type="text" id="firstlastname" name="firstlastname" class="form-control" required placeholder="Ім'я та прізвище">
+                        <label class="form-label" for="firstlastname"><span class="required-label">Ім'я та прізвище
+                                ментора</span></label>
+                        <input type="text" id="firstlastname" name="firstlastname" class="form-control" required
+                            placeholder="Ім'я та прізвище">
                     </div>
-            
+
                     <!-- Організація -->
                     <div class="form-group">
-                        <label class="form-label" for="organisation"><span class="required-label">Організація</span></label>
+                        <label class="form-label" for="organisation"><span
+                                class="required-label">Організація</span></label>
                         <select id="organisation" name="organisation" class="form-control form-select" required>
                             <option value="" disabled selected>Виберіть організацію</option>
                             <option value="organisation1">Університет</option>
@@ -322,21 +384,23 @@
                             <option value="organisation5">Студентське самоврядування</option>
                         </select>
                     </div>
-                    
+
                     <!-- Кількість грантових годин -->
                     <div class="form-group">
-                        <label class="form-label" for="houramount"><span class="required-label">Кількість грантових годин</span></label>
+                        <label class="form-label" for="houramount"><span class="required-label">Кількість грантових
+                                годин</span></label>
                         <select id="houramount" name="houramount" class="form-control form-select" required>
                             <option value="" disabled selected>Виберіть кількість годин</option>
                             <option value="100">100 годин (половина гранту)</option>
                             <option value="200">200 годин (повний обсяг гранту)</option>
                         </select>
                     </div>
-            
+
                     <!-- Тривалість залучення до проекту -->
                     <div class="form-group">
-                        <label class="form-label" for="workdeadline"><span class="required-label">Тривалість залучення до проекту</span></label>
-                        <select id="workdeadline" name="hourAmount" class="form-control form-select" required>
+                        <label class="form-label" for="workdeadline"><span class="required-label">Тривалість залучення
+                                до проекту</span></label>
+                        <select id="workdeadline" name="workdeadline" class="form-control form-select" required>
                             <option value="" disabled selected>Виберіть тривалість</option>
                             <option value="1">1 терм</option>
                             <option value="2">2 терми</option>
@@ -345,16 +409,19 @@
                             <option value="other">Інше</option>
                         </select>
                     </div>
-            
+
                     <!-- Скільки студентів потрібно залучити -->
                     <div class="form-group">
-                        <label class="form-label" for="numberofstud"><span class="required-label">Скільки студентів потрібно залучити</span></label>
-                        <input type="number" id="numberofstud" name="studentsCount" class="form-control" required placeholder="Кількість студентів">
+                        <label class="form-label" for="numberofstud"><span class="required-label">Скільки студентів
+                                потрібно залучити</span></label>
+                        <input type="number" id="numberofstud" name="studentsCount" class="form-control" required
+                            placeholder="Кількість студентів">
                     </div>
-            
+
                     <!-- Рік навчання -->
                     <div class="form-group">
-                        <label class="form-label" for="yearofstudy"><span class="required-label">Рік навчання</span></label>
+                        <label class="form-label" for="yearofstudy"><span class="required-label">Рік
+                                навчання</span></label>
                         <select id="yearofstudy" name="yearOfStudy" class="form-control form-select" required>
                             <option value="" disabled selected>Виберіть рік</option>
                             <option value="any">Будь-який</option>
@@ -366,7 +433,7 @@
                             <option value="6">Другий рік навчання на магістратурі</option>
                         </select>
                     </div>
-            
+
                     <!-- Програма -->
                     <div class="form-group">
                         <label class="form-label" for="program"><span class="required-label">Програма</span></label>
@@ -389,32 +456,124 @@
                             <option value="economic_analysis">Економічний аналіз</option>
                         </select>
                     </div>
-            
+
                     <!-- Опис вакансії -->
                     <div class="form-group">
-                        <label class="form-label" for="vacancydesc"><span class="required-label">Опис вакансії</span></label>
-                        <textarea id="vacancydesc" name="vacDescrtion" class="form-control" required placeholder="Опис вакансії"></textarea>
+                        <label class="form-label" for="motivation"><span class="required-label">Опис
+                                вакансії</span></label>
+                        <textarea id="vacancydesc" name="vacDescrtion" class="form-control" required
+                            placeholder="Опис вакансії"></textarea>
                     </div>
-            
+
                     <!-- Опис вимог -->
                     <div class="form-group">
-                        <label class="form-label" for="reqiurdesc"><span class="required-label">Опис вимог</span></label>
-                        <textarea id="reqiurdesc" name="vacRequir" class="form-control" required placeholder="Опис вимог"></textarea>
+                        <label class="form-label" for="reqiurdesc"><span class="required-label">Опис
+                                вимог</span></label>
+                        <textarea id="reqiurdesc" name="vacRequir" class="form-control" required
+                            placeholder="Опис вимог"></textarea>
                     </div>
-            
+
                     <!-- Опис обов'язків -->
                     <div class="form-group">
-                        <label class="form-label" for="taskdesc"><span class="required-label">Опис обов'язків</span></label>
-                        <textarea id="taskdesc" name="vacTask" class="form-control" required placeholder="Опис обов'язків"></textarea>
+                        <label class="form-label" for="taskdesc"><span class="required-label">Опис
+                                обов'язків</span></label>
+                        <textarea id="taskdesc" name="vacTask" class="form-control" required
+                            placeholder="Опис обов'язків"></textarea>
                     </div>
                 </div>
-            
+
                 <div class="modal-footer form-group form-action">
                     <button type="submit" class="btn btn-xl w-100">Відправити форму</button>
                 </div>
-            </form>            
-		</div>
-	</section>
+            </form>
+        </div>
+    </section>
+
+    <section class="modal bg-gradient modal-view-vacancy" id="modal-view-vacancy">
+        <div class="container container-modal">
+            <form class="modal__box form-style">
+                <span class="modal__close btn btn-white btn-icon" data-toggle-modal="#modal-view-vacancy">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-x">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </span>
+                <h2 class="modal__title text-left">Перегляд вакансії:</h2>
+
+                <div class="modal__content" id="modal-content-vacancy" id="modal-content-vacancy">
+                    <h4 class="empty-state">Вакансія завантажується...</h4>
+                </div>
+
+                <div class="modal-footer form-group form-action">
+                    <a href="#" class="btn btn-xl w-100" id="modal-call-vacancy">Відгукнутись на вакансію</a>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <section class="modal bg-gradient modal-form" id="modal-add-student">
+        <div class="container container-modal">
+            <form class="modal__box form-style">
+                <span class="modal__close btn btn-white btn-icon" data-toggle-modal="#modal-add-student">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-x">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </span>
+                <h2 class="modal__title">Заповнюй форму:</h2>
+
+                <div class="modal__content">
+                    <!-- Назва для вакансії -->
+                    <div class="form-group">
+                        <label class="form-label" for="firstLastname"><span class="required-label">Ім'я та
+                                прізвище:</span></label>
+                        <input type="text" id="firstLastname" name="firstLastname" class="form-control" required
+                            placeholder="Ім'я та прізвище:">
+                    </div>
+
+                    <!-- E-mail -->
+                    <div class="form-group">
+                        <label class="form-label" for="email"><span class="required-label">E-mail</span></label>
+                        <input type="email" id="email" name="email" class="form-control" required
+                            placeholder="example@email.net">
+                    </div>
+
+                    <!-- Ім'я та прізвище ментора -->
+                    <div class="form-group">
+                        <label class="form-label" for="group"><span class="required-label">Група (формат
+                                BE25):</span></label>
+                        <input type="text" id="group" name="group" class="form-control" required placeholder="Група">
+                    </div>
+
+                    <!-- Ім'я та прізвище ментора -->
+                    <div class="form-group">
+                        <label class="form-label" for="cv"><span class="required-label">Завантажити резюме(посилання
+                                на Google Drive):</span></label>
+                        <input type="text" id="cv" name="cv" class="form-control" required
+                            placeholder="Посилання на Google Drive">
+                    </div>
+
+
+                    <!-- Опис вакансії -->
+                    <div class="form-group">
+                        <label class="form-label" for="motivation"><span
+                                class="required-label">Мотивація:</span></label>
+                        <textarea id="motivation" name="motivation" class="form-control" required></textarea>
+                    </div>
+
+                </div>
+
+                <div class="modal-footer form-group form-action">
+                    <button type="submit" class="btn btn-xl w-100">Відправити</button>
+                </div>
+            </form>
+        </div>
+    </section>
 
     <script defer src="./libs/toastify/toastify.js"></script>
     <script defer src="./js/script.js" type="module"></script>

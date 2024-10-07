@@ -14,23 +14,27 @@
 	visibility: hidden;
 	opacity: 0;
 }
+
 .modal.show {
 	visibility: visible;
 	opacity: 1;
 }
+
 .modal .container {
 	min-height: min-content;
 	margin: 1rem 0;
 	width: 100%;
 }
+
 .modal .modal__close {
 	font-size: 20px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-radius: 0 var(--bdrs);
-    padding: 20px 20px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-radius: 0 var(--bdrs);
+	padding: 20px 20px;
 }
+
 .modal .modal__box {
 	border-radius: 2em;
 	padding: 2.5em 3.25em;
@@ -38,6 +42,7 @@
 	background: var(--color-white);
 	position: relative;
 }
+
 .modal .modal__title {
 	font-size: 2.375rem;
 	line-height: 120%;
@@ -46,15 +51,15 @@
 	color: var(--color-black);
 	margin-bottom: 1em;
 }
-.modal .modal__content {
 
-}
+.modal .modal__content {}
 
 @media (max-width: 768px) {
 	.modal {
 		padding-top: 1em;
 		align-items: flex-start;
 	}
+
 	.modal .modal__title {
 		font-size: 1.75em;
 	}
@@ -67,3 +72,19 @@
 }
 
 
+/* Перегляд вакансії */
+.modal-view-vacancy {}
+
+.modal-view-vacancy .vacancy-title {
+	font-size: 2.2rem;
+}
+
+.modal-view-vacancy .vacancy-item {
+	margin-bottom: 30px;
+}
+
+.modal-view-vacancy .vacancy-item-title {
+	margin-bottom: 15px;
+}
+
+.modal-view-vacancy .vacancy-item-text {}
