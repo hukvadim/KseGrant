@@ -1,0 +1,30 @@
+.call-to-action {
+	margin: 100px 0;
+}
+.call-to-action .call-to-action-holder {
+	
+}
+.call-to-action .call-to-action-text-hold {
+	width: 58%;
+}
+.call-to-action .call-to-action-img-hold {
+	width: 42%;
+}
+.call-to-action .call-to-action-title {
+	font-weight: 700;
+	font-size: 46px;
+	color: var(--colors-blue);
+	line-height: 1.4;
+	margin-bottom: 30px;
+}
+.call-to-action .call-to-action-text {
+	color: var(--color-grey);
+	margin-bottom: 30px;
+	font-size: 18px;
+}
+.call-to-action .call-to-action-action {
+}
+.call-to-action .call-to-action-img {
+	border-radius: calc(var(--bdrs-xlg) * 1.8);
+	border: 8px solid rgba(0, 0, 0, 0.086);
+}

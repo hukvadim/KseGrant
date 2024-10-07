@@ -1,0 +1,60 @@
+.btn {
+    --color: var(--color-white);
+    --bg: var(--color-primary);
+    --fz: 16px;
+    --w: 30px;
+    --h: 46px;
+    --bdrs: var(--bdrs-xlg);
+    --padding: 0 25px;
+    --icon-gap: 5px;
+    --hover-bg: var(--color-primary-hover);
+    --hover-color: var(--color-white);
+
+    background-color: var(--bg);
+    color: var(--color);
+    border-radius: var(--bdrs);
+    min-width: var(--w);
+    min-height: var(--h);
+    padding: var(--padding);
+    font-size: var(--fz);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--icon-gap);
+    border: none;
+    position: relative;
+    cursor: pointer;
+    font-weight: 500;
+    transition: .25s;
+}
+
+.btn:hover {
+    background-color: var(--hover-bg);
+    color: var(--hover-color);
+}
+
+.btn-ghost {
+    --color: var(--color-blue);
+    --bg: transition;
+}
+
+.btn-white {
+    --color: var(--color-primary);
+    --bg: var(--color-grey-light);
+}
+
+.btn-icon {
+    --padding: 0 0;
+    --w: var(--h);
+}
+
+.btn-round {
+    border-radius: 50px;
+}
+
+.btn-xl {
+    --h: 60px;
+    --fz: 18px;
+    --bdrs: calc(var(--bdrs-xlg) * 2);
+    --padding: 0 35px;
+}
